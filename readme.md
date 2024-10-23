@@ -18,6 +18,10 @@ pip install ollama
 Then
 
 ```
+python ollama-eng-pro.py
+```
+or you wanna try the raw one
+```
 python ollama-eng.py
 ```
 
