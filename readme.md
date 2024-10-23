@@ -1,3 +1,28 @@
+## 🦙 Ollama eng is here
+
+You can now have the power of this script, completely locally using Ollama and any of the supported function calling models:
+Llama 3.1
+Mistral Nemo
+Firefunction v2
+Command-R +
+
+Before running make sure you install the latest version of the Ollama app and 
+
+```
+pip install ollama
+```
+
+Then
+
+```
+python ollama-eng.py
+```
+
+### 🚨Important note on safety when using Ollama Engineer!
+
+Be extra careful if you ever let these local models run code on your machine, especially using the executing code tool. It may brick your machine. So, I highly recommand WSL(quite convinient and can be easily reinstalled) I've managed to remove the limitation of code execution and file editation. You may have found that there's already got a fork:"ollama-engineer", which my code is from. However after trying, I find the "ollama-engineer" use my cpu and RAM only, therefore, I can hardly run any of the LLMs (it said that 34G is needed for the Mistral-nemo). After trying, giving up finding bugs in its long code, based upon the raw ollama-eng from "claude-engineer", I replace and add the code from "ollama-engineer". Miraculously, it can use my gpu and cares nothing about my RAM (even it is not sufficient). And here it is, "ollama-engineer-pro".
+
+
 # 🤖 Claude Engineer
 
 Claude Engineer is an advanced interactive command-line interface (CLI) that harnesses the power of Anthropic's Claude 3 and Claude 3.5 models to assist with a wide range of software development tasks. This tool seamlessly combines the capabilities of state-of-the-art large language models with practical file system operations, web search functionality, intelligent code analysis, and execution capabilities.
@@ -366,29 +391,6 @@ graph TD
 
 Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
 
-## 🦙 Ollama eng is here
-
-You can now have the power of this script, completely locally using Ollama and any of the supported function calling models:
-Llama 3.1
-Mistral Nemo
-Firefunction v2
-Command-R +
-
-Before running make sure you install the latest version of the Ollama app and 
-
-```
-pip install ollama
-```
-
-Then
-
-```
-python ollama-eng.py
-```
-
-### 🚨Important note on safety when using Ollama Engineer!
-
-Be extra careful if you ever let these local models run code on your machine, especially using the executing code tool. It may brick your machine. I disabled the tool execution completely for OLLAMA engineer but if you want to implement it again based on the original script use at your own discretion.
 
 ## Star History
 
