@@ -1,3 +1,6 @@
+## Appology:
+I'm a noob and not very good at English (the editation of the text below is directly writen by me in English, so many grammar mistakes may be made). Also, I'm not good at python(I just know little about it and can hardly program in python), I've tried my best, but there may be still some mistakes in the "ollama-eng-pro.py".
+
 ## 🦙 Ollama eng is here
 
 You can now have the power of this script, completely locally using Ollama and any of the supported function calling models:
@@ -17,6 +20,9 @@ Then
 ```
 python ollama-eng.py
 ```
+
+### note
+You'd better open the ollama-eng-pro.py or ollama-eng.py with something (as for me, i prefer notepad in windows, as i'm using WSL and not very good at using Vim). Then, manage to search "# Models" (press "ctrl + f" if you're on windows with wsl). Finally, you will find the models that this script use. You may edit it according to your computer's performance. For example, you may change the 'CODEEDITORMODEL = "mistral-nemo"' into 'CODEEDITORMODEL = "codellama:13b"'
 
 ### 🚨Important note on safety when using Ollama Engineer!
 
